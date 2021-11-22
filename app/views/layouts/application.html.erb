@@ -29,6 +29,7 @@
         <a href="/characaters">Characters</a>
       </li>
 
+
       <% if session.fetch(:user_id) == nil %>
         <li> 
           <a href="/user_sign_up">Sign up</a>
@@ -40,6 +41,12 @@
         <li> 
           <a href="/user_sign_out">Sign out</a>
         </li>
+        <li> 
+          <a href="/bookmarks">My Bookmarks</a>
+        </li>
+        <li> 
+          <a href="/">Home</a>
+        </li>        
       <% end %>
     </ul> 
 
