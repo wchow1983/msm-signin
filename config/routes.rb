@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  
+  get("/", { :controller => "movies", :action =>"index"})
 
   # Routes for the Bookmark resource:
 
@@ -18,8 +20,6 @@ Rails.application.routes.draw do
   get("/delete_bookmark/:path_id", { :controller => "bookmarks", :action => "destroy" })
 
   #------------------------------
-
-  get("/", { :controller => "movies", :action =>"index"})
 
   # Routes for the User account:
 
